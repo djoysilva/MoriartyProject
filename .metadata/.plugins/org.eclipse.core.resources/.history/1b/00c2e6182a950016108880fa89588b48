@@ -1,0 +1,8 @@
+package br.com.fiap.conexao;
+
+public final class ConnectionFactory {
+	
+   private static ConnectionFactory conexao = null;
+   
+   
+}
