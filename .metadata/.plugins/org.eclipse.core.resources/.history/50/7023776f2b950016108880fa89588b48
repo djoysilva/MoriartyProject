@@ -1,0 +1,21 @@
+package br.com.fiap.conexao;
+
+import java.sql.Connection;
+
+public final class ConnectionFactory {
+	
+   private static ConnectionFactory conexao = null;
+   
+   public static ConnectionFactory controlarInstancia() {
+	   
+	   if (conexao == null) {
+		   conexao = new ConnectionFactory();
+	   }
+	   return conexao;
+   }
+   
+   public Connection getConnection(String usuario, String senha) {
+	   
+   }
+   
+}

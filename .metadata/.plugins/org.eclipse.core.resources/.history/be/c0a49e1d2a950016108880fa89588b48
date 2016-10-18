@@ -1,0 +1,13 @@
+package br.com.fiap.conexao;
+
+public final class ConnectionFactory {
+	
+   private static ConnectionFactory conexao = null;
+   
+   public static ConnectionFactory controlarInstancia() {
+	   
+	   if (conexao == null) {
+		   conexao = new ConnectionFactory();
+	   }
+   }
+}
