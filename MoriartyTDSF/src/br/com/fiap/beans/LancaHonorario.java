@@ -1,0 +1,62 @@
+package br.com.fiap.beans;
+
+public class LancaHonorario {
+	private int codigoLancamento;
+	private TipoTarefa codigoTipoTarefa;
+	private Processo codigoProcesso;
+	private String dataHonorario;
+	private double quantidadeHora;
+	private String observacao;
+	
+	public int getCodigoLancamento() {
+		return codigoLancamento;
+	}
+	public void setCodigoLancamento(int codigoLancamento) {
+		this.codigoLancamento = codigoLancamento;
+	}
+	public TipoTarefa getCodigoTipoTarefa() {
+		return codigoTipoTarefa;
+	}
+	public void setCodigoTipoTarefa(TipoTarefa codigoTipoTarefa) {
+		this.codigoTipoTarefa = codigoTipoTarefa;
+	}
+	public Processo getCodigoProcesso() {
+		return codigoProcesso;
+	}
+	public void setCodigoProcesso(Processo codigoProcesso) {
+		this.codigoProcesso = codigoProcesso;
+	}
+	public String getDataHonorario() {
+		return dataHonorario;
+	}
+	public void setDataHonorario(String dataHonorario) {
+		this.dataHonorario = dataHonorario;
+	}
+	public double getQuantidadeHora() {
+		return quantidadeHora;
+	}
+	public void setQuantidadeHora(double quantidadeHora) {
+		this.quantidadeHora = quantidadeHora;
+	}
+	public String getObservacao() {
+		return observacao;
+	}
+	public void setObservacao(String observacao) {
+		this.observacao = observacao;
+	}
+	public LancaHonorario(int codigoLancamento, TipoTarefa codigoTipoTarefa, Processo codigoProcesso, String dataHonorario,
+			double quantidadeHora, String observacao) {
+		super();
+		this.codigoLancamento = codigoLancamento;
+		this.codigoTipoTarefa = codigoTipoTarefa;
+		this.codigoProcesso = codigoProcesso;
+		this.dataHonorario = dataHonorario;
+		this.quantidadeHora = quantidadeHora;
+		this.observacao = observacao;
+	}
+	public LancaHonorario() {
+		super();
+	}
+
+
+}
