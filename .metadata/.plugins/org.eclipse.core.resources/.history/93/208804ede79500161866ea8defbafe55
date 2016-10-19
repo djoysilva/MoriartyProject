@@ -1,0 +1,27 @@
+package br.com.fiap.conexao;
+
+import java.sql.Connection;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Connection c = null;
+		
+		try {
+			c = new ConnectionFactory().controlarInstancia().getConnection("RM76983", "J03240455_");
+			
+			System.out.println("abriu");
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			System.out.println("ruim");
+		}
+		try {
+			c.close();
+		}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}
