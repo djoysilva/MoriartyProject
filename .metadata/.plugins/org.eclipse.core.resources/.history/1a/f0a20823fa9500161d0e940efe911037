@@ -1,0 +1,28 @@
+package br.com.fiap.testes;
+
+import java.sql.Connection;
+
+import br.com.fiap.conexao.ConnectionFactory;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Connection conexao = null;
+		
+		try {
+			conexao = ConnectionFactory.controlarInstancia().getConnection("", "");
+			System.out.println("deu bom");
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+			System.out.println("deu ruim");
+		}
+		try {
+			conexao.close();
+		}
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}

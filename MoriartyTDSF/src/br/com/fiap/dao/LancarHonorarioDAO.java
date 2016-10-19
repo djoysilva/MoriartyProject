@@ -27,8 +27,8 @@ public class LancarHonorarioDAO{
 		String comando = "INSERT INTO T_AM_ART_LANCA_HONORARIO (CD_LANCAMENTO, CD_TIPO_TAREFA, NR_PROCESSO, DT_HONORARIO, QT_HORA, DS_OBSERVACAO) values (?, ?, ?, ?, ?, ?)";
 		PreparedStatement struct  = c.prepareStatement(comando);
 		struct.setInt(1, lancaHonorario.getCodigoLancamento());
-		struct.setInt(2, lancaHonorario.getCodigoTipoTarefa().getCodigo());
-		struct.setInt(3, lancaHonorario.getCodigoProcesso().getNumero());
+		struct.setInt(2, lancaHonorario.getCodigoTipoTarefa());
+		struct.setInt(3, lancaHonorario.getCodigoProcesso());
 		struct.setString(4, lancaHonorario.getDataHonorario());
 		struct.setDouble(5, lancaHonorario. getQuantidadeHora());
 		struct.setString(6, lancaHonorario. getObservacao());
@@ -43,8 +43,8 @@ public class LancarHonorarioDAO{
 		while(result.next()){
 			LancaHonorario lancaHonorario = new LancaHonorario();
 			lancaHonorario.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));
-			lancaHonorario.getCodigoTipoTarefa().setCodigo(result.getInt("CD_TIPO_TAREFA"));
-			lancaHonorario.getCodigoProcesso().setNumero(result.getInt("NR_PROCESSO"));
+			lancaHonorario.setCodigoTipoTarefa(result.getInt("CD_TIPO_TAREFA"));
+			lancaHonorario.setCodigoProcesso(result.getInt("NR_PROCESSO"));
 			lancaHonorario.setDataHonorario(result.getString("DT_HONORARIO"));
 			lancaHonorario.setQuantidadeHora(result.getDouble("QT_HORA"));
 			lancaHonorario.setObservacao(result.getString("DS_OBSERVACAO"));
@@ -61,8 +61,8 @@ public class LancarHonorarioDAO{
         ResultSet result = struct.executeQuery();
         if (result.next()){
             lancaHonorario.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));
-            lancaHonorario.getCodigoTipoTarefa().setCodigo(result.getInt("CD_TIPO_TAREFA"));
-            lancaHonorario.getCodigoProcesso().setNumero(result.getInt("NR_PROCESSO"));
+            lancaHonorario.setCodigoTipoTarefa(result.getInt("CD_TIPO_TAREFA"));
+            lancaHonorario.setCodigoProcesso(result.getInt("NR_PROCESSO"));
             lancaHonorario.setDataHonorario(result.getString("DT_HONORARIO"));
             lancaHonorario.setObservacao(result.getString("DS_OBSERVACAO"));
          }

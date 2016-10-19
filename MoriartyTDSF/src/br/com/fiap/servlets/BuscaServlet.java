@@ -29,7 +29,7 @@ public class BuscaServlet extends HttpServlet{
 		}
 		else {
 			if (nome != null) {
-				Processo processo = buscarPorNomeCliente(nome);
+				Processo processo = search(nome);
 				req.setAttribute("chaveNome", processo);
 				req.getRequestDispatcher("alterar.jsp").forward(req, resp);
 			}
