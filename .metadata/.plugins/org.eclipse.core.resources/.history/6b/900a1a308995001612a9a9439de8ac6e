@@ -1,0 +1,9 @@
+package br.com.fiap.dao;
+
+import br.com.fiap.beans.LancaHonorario;
+
+public class LancarHonorarioDAO{
+	public void createHonorario(LancaHonorario lancaHonorario){
+		
+	}
+}

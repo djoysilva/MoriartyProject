@@ -12,7 +12,7 @@ public class ProcessoDAO {
 
 	public List<Processo> getLista(Connection conexao) throws Exception{
 		List<Processo> lstProcesso = new ArrayList<Processo>();
-		PreparedStatement estrutura = conexao.prepareStatement("SELECT * FROM T_AM_ART_PROCESSO P INNER JOIN T_AM_ART_ADVOGADO A USING(CD_ADVOGADO)");
+		PreparedStatement estrutura = conexao.prepareStatement("SELECT * FROM T_AM_ART_PROCESSO INNER JOIN T_AM_ART_ADVOGADO USING(CD_ADVOGADO)");
 		ResultSet resultado = estrutura.executeQuery();
 		
 		while(resultado.next()){
