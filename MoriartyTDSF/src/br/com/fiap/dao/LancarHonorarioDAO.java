@@ -9,8 +9,8 @@ import java.util.List;
 import br.com.fiap.beans.LancaHonorario;
 
 /**
- * Na documentaçã você inicia desenvolvendo uma aplicação sucinta do se projeto. Neste espaço onde você
- * pode utilizar as tags de HTML, como por exemplo, a <code. tag </code>, ou ainda deixar em <i>itálico
+ * Na documentaï¿½ï¿½ vocï¿½ inicia desenvolvendo uma aplicaï¿½ï¿½o sucinta do se projeto. Neste espaï¿½o onde vocï¿½
+ * pode utilizar as tags de HTML, como por exemplo, a <code. tag </code>, ou ainda deixar em <i>itï¿½lico
  * </i> e etc.
  * Existem ainda marcas especiais como:
  * @author Joyce Mara da Silva
@@ -18,7 +18,7 @@ import br.com.fiap.beans.LancaHonorario;
  * @since1.0
  * @see OutraClasseRelacionada
  * @see OutraClasseRelacionadaComEsteProjeto
- * Não deixe também de comentar os seus códigos, principalmente os métodos com a mesma
+ * Nï¿½o deixe tambï¿½m de comentar os seus cï¿½digos, principalmente os mï¿½todos com a mesma
  * <b>estrutura</b>
  * */
 
@@ -54,6 +54,22 @@ public class LancarHonorarioDAO{
 		struct.close();
 		return listHonorario;
 	}
+    
+    public LancaHonorario search(int codigoLancamento, Connection c) throws Exception{
+        LancaHonorario lancaHonorario = new LancaHonorario();
+        PreparedStatement struct = c.prepareStatement("SELECT CD_LANCAMENTO FROM T_AM_ART_LANCA_HONORARIO WHERE CD_LANCAMENTO = ? ");
+        ResultSet result = struct.executeQuery();
+        if (result.next()){
+            lancaHonorario.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));
+            lancaHonorario.getCodigoTipoTarefa().setCodigo(result.getInt("CD_TIPO_TAREFA"));
+            lancaHonorario.getCodigoProcesso().setNumero(result.getInt("NR_PROCESSO"));
+            lancaHonorario.setDataHonorario(result.getString("DT_HONORARIO"));
+            lancaHonorario.setObservacao(result.getString("DS_OBSERVACAO"));
+         }
+         result.close();
+         struct.close();
+         return lancaHonorario;
+    }
 
 	public int update(Double hours, String obs, Connection c) throws Exception{
 		PreparedStatement struct = c.prepareStatement("update T_AM_ART_LANCA_HONORARIO SET QT_HORA = ? , DS_OBSERVACAO = ?");
@@ -64,7 +80,7 @@ public class LancarHonorarioDAO{
 		return saida;
 	}
 
-	public void deleteList(Connection c, int codigoLancamento) throws Exception{
+	public void delete(Connection c, int codigoLancamento) throws Exception{
 		PreparedStatement struct = c.prepareStatement("delete FROM  T_AM_ART_LANCA_HONORARIO where CD_LANCAMENTO = ?");
 		struct.setInt(1, codigoLancamento);
 		struct.execute();

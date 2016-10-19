@@ -52,6 +52,23 @@ import java.util.List;
             return listDespesa;           
         }
         
+        public LancaDespesa search(int codigoLanca, Connection c) throws Exception{
+            LancaDespesa lancaDespesa = new LancaDespesa();
+            PreparedStatement struct = c.prepareStatement("select CD_LANCAMENTO from T_AM_ART_LANCA_DESPESA where CD_LANCAMENTO = ?");
+            struct.setInt(1, codigoLanca);
+            ResultSet result = struct.executeQuery();
+            if(result.next()){
+                lancaDespesa.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));
+                lancaDespesa.getCodigoTipoDespesa().setInt(result.getInt("CD_TIPO_DESPESA"));
+                lancaDespesa.getNumero().setInt(result.getInt("NR_PROCESSO"));
+                lancaDespesa.setDataDespesa(result.getString("DT_DESPESA"));
+                lancaDespesa.setValorDespesa(result.getDouble("VL_DESPESA"));
+            }
+            result.close();
+            struct.close();
+            return lancaDespesa;
+        }
+        
         public int update(String data, Double valor, Connection c) throws Exception{
             PreparedStatement struct = c.prepareStatement("update T_AM_ART_LANCA_DESPESA set DT_DESPESA = ?, VL_DESPESA = ? ");
             struct.setString(1, data);
