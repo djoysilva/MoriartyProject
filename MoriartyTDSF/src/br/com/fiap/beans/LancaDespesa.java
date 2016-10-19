@@ -2,28 +2,28 @@ package br.com.fiap.beans;
 
 public class LancaDespesa {
 	private int codigoLancamento;
-	private TipoDespesa codigoTipoDespesa;
-	private Processo numero;
+	private int codigoTipoDespesa;
+	private int numero;
 	private String dataDespesa;
 	private double valorDespesa;
 	private String descricao;
 	
-	public double getCodigoLancamento() {
+	public int getCodigoLancamento() {
 		return codigoLancamento;
 	}
 	public void setCodigoLancamento(int codigoLancamento) {
 		this.codigoLancamento = codigoLancamento;
 	}
-	public TipoDespesa getCodigoTipoDespesa() {
+	public int getCodigoTipoDespesa() {
 		return codigoTipoDespesa;
 	}
-	public void setCodigoTipoDespesa(TipoDespesa codigoTipoDespesa) {
+	public void setCodigoTipoDespesa(int codigoTipoDespesa) {
 		this.codigoTipoDespesa = codigoTipoDespesa;
 	}
-	public Processo getNumero() {
+	public int getNumero() {
 		return numero;
 	}
-	public void setNumero(Processo numero) {
+	public void setNumero(int numero) {
 		this.numero = numero;
 	}
 	public String getDataDespesa() {
@@ -44,7 +44,13 @@ public class LancaDespesa {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public LancaDespesa(int codigoLancamento, TipoDespesa codigoTipoDespesa, Processo numero, String dataDespesa,
+	
+	public String getTudo() {
+		return codigoLancamento + "\n" + codigoTipoDespesa + "\n" +
+	numero + "\n" + dataDespesa + "\n" + valorDespesa + "\n" + descricao;
+	}
+	
+	public LancaDespesa(int codigoLancamento, int codigoTipoDespesa, int numero, String dataDespesa,
 			double valorDespesa, String descricao) {
 		super();
 		this.codigoLancamento = codigoLancamento;

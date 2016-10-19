@@ -2,8 +2,8 @@ package br.com.fiap.beans;
 
 public class LancaHonorario {
 	private int codigoLancamento;
-	private TipoTarefa codigoTipoTarefa;
-	private Processo codigoProcesso;
+	private int codigoTipoTarefa;
+	private int codigoProcesso;
 	private String dataHonorario;
 	private double quantidadeHora;
 	private String observacao;
@@ -14,16 +14,16 @@ public class LancaHonorario {
 	public void setCodigoLancamento(int codigoLancamento) {
 		this.codigoLancamento = codigoLancamento;
 	}
-	public TipoTarefa getCodigoTipoTarefa() {
+	public int getCodigoTipoTarefa() {
 		return codigoTipoTarefa;
 	}
-	public void setCodigoTipoTarefa(TipoTarefa codigoTipoTarefa) {
+	public void setCodigoTipoTarefa(int codigoTipoTarefa) {
 		this.codigoTipoTarefa = codigoTipoTarefa;
 	}
-	public Processo getCodigoProcesso() {
+	public int getCodigoProcesso() {
 		return codigoProcesso;
 	}
-	public void setCodigoProcesso(Processo codigoProcesso) {
+	public void setCodigoProcesso(int codigoProcesso) {
 		this.codigoProcesso = codigoProcesso;
 	}
 	public String getDataHonorario() {
@@ -44,7 +44,7 @@ public class LancaHonorario {
 	public void setObservacao(String observacao) {
 		this.observacao = observacao;
 	}
-	public LancaHonorario(int codigoLancamento, TipoTarefa codigoTipoTarefa, Processo codigoProcesso, String dataHonorario,
+	public LancaHonorario(int codigoLancamento, int codigoTipoTarefa, int codigoProcesso, String dataHonorario,
 			double quantidadeHora, String observacao) {
 		super();
 		this.codigoLancamento = codigoLancamento;
