@@ -15,7 +15,7 @@ public class Processo {
 	private short situacao;
 	private String observacao;
 	
-	public double getNumero() {
+	public int getNumero() {
 		return numero;
 	}
 	public void setNumero(int numero) {
