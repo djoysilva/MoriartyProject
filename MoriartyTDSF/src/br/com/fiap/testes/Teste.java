@@ -1,12 +1,13 @@
 package br.com.fiap.testes;
 
 import java.sql.Connection;
-import java.util.ArrayList;
-import java.util.List;
 
 import br.com.fiap.beans.LancaDespesa;
+import br.com.fiap.beans.LancaHonorario;
+import br.com.fiap.beans.Processo;
 import br.com.fiap.conexao.ConnectionFactory;
 import br.com.fiap.dao.LancarDespesaDAO;
+import br.com.fiap.dao.ProcessoDAO;
 
 public class Teste {
 
@@ -17,25 +18,14 @@ public class Teste {
 			conexao = ConnectionFactory.controlarInstancia().getConnection("", "");
 			System.out.println("deu bom");
 			
-			List<LancaDespesa> lista = new ArrayList<LancaDespesa>();
+			ProcessoDAO dao = new ProcessoDAO();
+		
+			Processo p =  dao.buscarPorNumeroProcesso(4, conexao);
 			
-			LancarDespesaDAO dao = new LancarDespesaDAO();
-			lista = dao.readList(conexao);
+			LancaDespesa ld = new LancaDespesa(66, 4, 4, "22/06/1988", 666.6, "ojisadsad");
+			LancarDespesaDAO ldDAO =new LancarDespesaDAO();
+			ldDAO.create(p, 4, conexao);
 			
-			/*for(LancaDespesa obj: lista) {
-				System.out.println(obj.getTudo() + "\n");
-			}*/
-			
-			LancaDespesa teste = new LancaDespesa();
-			teste.setCodigoLancamento(666);
-			teste.setDataDespesa("22/06/1988");
-			teste.setDescricao("nao aguet omais");
-			teste.setValorDespesa(666.6);
-			dao.create(teste, conexao);
-			
-			for(LancaDespesa obj: lista) {
-				System.out.println(obj.getTudo() + "\n");
-			}
 			
 			
 		}

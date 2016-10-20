@@ -34,6 +34,7 @@ public class LancarHonorarioDAO{
 		struct.setString(6, lancaHonorario. getObservacao());
 		struct.execute();
 		struct.close();
+		System.out.println("GRAVOU IRMAO");
 	}
 
 	public List<LancaHonorario> readList(Connection c) throws Exception{
