@@ -24,17 +24,17 @@ import br.com.fiap.beans.LancaHonorario;
 
 public class LancarHonorarioDAO{
 	public void create(LancaHonorario lancaHonorario, Connection c) throws Exception{
-		String comando = "INSERT INTO T_AM_ART_LANCA_HONORARIO (CD_LANCAMENTO, CD_TIPO_TAREFA, NR_PROCESSO, DT_HONORARIO, QT_HORA, DS_OBSERVACAO) values (?, ?, ?, ?, ?, ?)";
+		String comando = "INSERT INTO T_AM_ART_LANCA_HONORARIO (CD_LANCAMENTO, CD_TIPO_TAREFA, NR_PROCESSO, DT_HONORARIO, QT_HORA, DS_OBSERVACAO) values (SQ_AM_ART_LANCA_HONORARIO.nextval, ?, ?, ?, ?, ?)";
 		PreparedStatement struct  = c.prepareStatement(comando);
-		struct.setInt(1, lancaHonorario.getCodigoLancamento());
-		struct.setInt(2, lancaHonorario.getCodigoTipoTarefa());
-		struct.setInt(3, lancaHonorario.getCodigoProcesso());
-		struct.setString(4, lancaHonorario.getDataHonorario());
-		struct.setDouble(5, lancaHonorario. getQuantidadeHora());
-		struct.setString(6, lancaHonorario. getObservacao());
+		
+		struct.setInt(1, lancaHonorario.getCodigoTipoTarefa());
+		struct.setInt(2, lancaHonorario.getCodigoProcesso());
+		struct.setString(3, lancaHonorario.getDataHonorario());
+		struct.setDouble(4, lancaHonorario. getQuantidadeHora());
+		struct.setString(5, lancaHonorario. getObservacao());
 		struct.execute();
 		struct.close();
-		System.out.println("GRAVOU IRMAO");
+		System.out.println("Gravado com sucesso!");
 	}
 
 	public List<LancaHonorario> readList(Connection c) throws Exception{
