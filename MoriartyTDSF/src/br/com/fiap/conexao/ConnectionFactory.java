@@ -17,20 +17,20 @@ public final class ConnectionFactory {
 		return conexao;
 	}
 
-	public Connection getConnection(String usuario, String senha) throws Exception{
+	public Connection getConnection() throws Exception{
 
-		FileReader arquivo = new FileReader(System.getProperty("user.dir") + "/conexao/conexao.txt");
-		BufferedReader dados = new BufferedReader(arquivo);
+		//FileReader arquivo = new FileReader(System.getProperty("user.dir") + "/conexao/conexao.txt");
+		//BufferedReader dados = new BufferedReader(arquivo);
 
-		String url = dados.readLine();
+		String url = "jdbc:oracle:thin:/:@192.168.60.15:1521:ORCL"; //dados.readLine();
 
 		if (url.indexOf("oracle") > 0) {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 		}
 
-		dados.close();
+		//dados.close();
 
-		return DriverManager.getConnection(url, usuario, senha);
+		return DriverManager.getConnection(url);
 	}
 	/*
 	public Connection getConnection() throws Exception{

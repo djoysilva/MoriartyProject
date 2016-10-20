@@ -6,9 +6,10 @@
 <fullyQualifiedTypeName name="sun.rmi.transport.Connection"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="br.com.fiap.dao.LancarDespesaDAO"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="br.com.fiap.beans.TipoTarefa"/>
 <fullyQualifiedTypeName name="br.com.fiap.beans.LancaDespesa"/>
 <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="br.com.fiap.beans.TipoDespesa"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

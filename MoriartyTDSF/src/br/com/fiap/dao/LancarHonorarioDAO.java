@@ -34,15 +34,22 @@ public class LancarHonorarioDAO{
 		struct.setString(5, lancaHonorario. getObservacao());
 		struct.execute();
 		struct.close();
+		
 		System.out.println("Gravado com sucesso!");
 	}
 
-	public List<LancaHonorario> readList(Connection c) throws Exception{
+	public List<LancaHonorario> readList(int nrProcesso, Connection c) throws Exception{
 		List<LancaHonorario> listHonorario = new ArrayList<LancaHonorario>();
-		PreparedStatement struct = c.prepareStatement("select * from T_AM_ART_LANCA_HONORARIO INNER JOIN T_AM_ART_PROCESSO USING (NR_PROCESSO)");
+		
+		PreparedStatement struct = c.prepareStatement("SELECT * FROM T_AM_ART_LANCA_HONORARIO WHERE NR_PROCESSO = ?");
+		
+		struct.setInt(1, nrProcesso);
+		
 		ResultSet result = struct.executeQuery();
 		while(result.next()){
+			
 			LancaHonorario lancaHonorario = new LancaHonorario();
+			
 			lancaHonorario.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));
 			lancaHonorario.setCodigoTipoTarefa(result.getInt("CD_TIPO_TAREFA"));
 			lancaHonorario.setCodigoProcesso(result.getInt("NR_PROCESSO"));
@@ -50,35 +57,41 @@ public class LancarHonorarioDAO{
 			lancaHonorario.setQuantidadeHora(result.getDouble("QT_HORA"));
 			lancaHonorario.setObservacao(result.getString("DS_OBSERVACAO"));
 			listHonorario.add(lancaHonorario);
-		}
+		} 
 		result.close();
 		struct.close();
 		return listHonorario;
 	}
     
-    public LancaHonorario search(int codigoLancamento, Connection c) throws Exception{
+    public LancaHonorario search(int numeroLanca, int numeroProcesso, Connection c) throws Exception{
         LancaHonorario lancaHonorario = new LancaHonorario();
-        PreparedStatement struct = c.prepareStatement("SELECT CD_LANCAMENTO FROM T_AM_ART_LANCA_HONORARIO WHERE CD_LANCAMENTO = ? ");
+        PreparedStatement struct = c.prepareStatement("select * from T_AM_ART_LANCA_HONORARIO where NR_PROCESSO = ? AND CD_LANCAMENTO = ?");
+        struct.setInt(1, numeroProcesso);
+        struct.setInt(2, numeroProcesso);
+        
         ResultSet result = struct.executeQuery();
         if (result.next()){
-            lancaHonorario.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));
-            lancaHonorario.setCodigoTipoTarefa(result.getInt("CD_TIPO_TAREFA"));
-            lancaHonorario.setCodigoProcesso(result.getInt("NR_PROCESSO"));
-            lancaHonorario.setDataHonorario(result.getString("DT_HONORARIO"));
-            lancaHonorario.setObservacao(result.getString("DS_OBSERVACAO"));
-         }
+        	lancaHonorario.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));
+			lancaHonorario.setCodigoTipoTarefa(result.getInt("CD_TIPO_TAREFA"));
+			lancaHonorario.setCodigoProcesso(result.getInt("NR_PROCESSO"));
+			lancaHonorario.setDataHonorario(result.getString("DT_HONORARIO"));
+			lancaHonorario.setQuantidadeHora(result.getDouble("QT_HORA"));
+			lancaHonorario.setObservacao(result.getString("DS_OBSERVACAO"));
+		}
          result.close();
          struct.close();
          return lancaHonorario;
     }
 
-	public int update(Double hours, String obs, Connection c) throws Exception{
-		PreparedStatement struct = c.prepareStatement("update T_AM_ART_LANCA_HONORARIO SET QT_HORA = ? , DS_OBSERVACAO = ?");
-		struct.setDouble(1, hours);
-		struct.setString(2, obs);
-		int saida = struct.executeUpdate();
-		struct.close();
-		return saida;
+	public int update(int codigoLanca, String data, Double hours, String obs, Connection c) throws Exception{
+		PreparedStatement struct = c.prepareStatement("update T_AM_ART_LANCA_HONORARIO SET DT_HONORARIO = ?, QT_HORA = ? , DS_OBSERVACAO = ? where CD_LANCAMENTO = ?");
+		 struct.setString(1, data);
+         struct.setDouble(2, hours);
+         struct.setString(3, obs);
+         struct.setInt(4, codigoLanca);
+         int saida = struct.executeUpdate();
+         struct.close();
+         return saida;
 	}
 
 	public void delete(Connection c, int codigoLancamento) throws Exception{

@@ -17,11 +17,11 @@ public class Teste {
 		Connection conexao = null;
 		
 		try {
-			conexao = ConnectionFactory.controlarInstancia().getConnection("", "");
+			conexao = ConnectionFactory.controlarInstancia().getConnection();
 			System.out.println("Conectado!");
 			
 			ProcessoDAO dao = new ProcessoDAO();
-			Processo p =  dao.buscarPorNumeroProcesso(4, conexao);
+			Processo p =  dao.buscarPorNumeroProcesso(5, conexao);
 			TipoDespesa tipo = new TipoDespesa(1,"Descricao");
 			LancaDespesa ld = new LancaDespesa();
 			
@@ -46,8 +46,38 @@ public class Teste {
 									lista.getDataDespesa() + "\n" +
 									lista.getValorDespesa() + "\n" +
 									lista.getDescricao());
+									
 			}
 			
+			//teste search
+			ld = ldDAO.search(p.getNumero(), ld.getCodigoTipoDespesa(), conexao);
+			System.out.println(ld.getCodigoLancamento() + "\n" +
+					ld.getCodigoTipoDespesa() + "\n" +
+					ld.getNumero() + "\n" +
+					ld.getDataDespesa() + "\n" +
+					ld.getValorDespesa() + "\n" +
+					ld.getDescricao());
+			
+			
+			//teste update
+			/*int update = ldDAO.update(40, "22/06/1988", 2.0, "update", conexao);
+			System.out.println(ld.getCodigoTipoDespesa() + "\n" +
+					ld.getCodigoTipoDespesa() + "\n" +
+					ld.getNumero() + "\n" +
+					ld.getDataDespesa() + "\n" +
+					ld.getValorDespesa() + "\n" +
+					ld.getDescricao());
+			
+			//teste delete
+			ldDAO.delete(40,conexao);
+			System.out.println(ld.getCodigoTipoDespesa() + "\n" +
+					ld.getCodigoTipoDespesa() + "\n" +
+					ld.getNumero() + "\n" +
+					ld.getDataDespesa() + "\n" +
+					ld.getValorDespesa() + "\n" +
+					ld.getDescricao());
+			
+			*/
 		}
 		catch(Exception e) {
 			e.printStackTrace();
