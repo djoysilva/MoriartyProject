@@ -58,7 +58,8 @@ public class LancarHonorarioDAO{
     
     public LancaHonorario search(int codigoLancamento, Connection c) throws Exception{
         LancaHonorario lancaHonorario = new LancaHonorario();
-        PreparedStatement struct = c.prepareStatement("SELECT CD_LANCAMENTO FROM T_AM_ART_LANCA_HONORARIO WHERE CD_LANCAMENTO = ? ");
+        PreparedStatement struct = c.prepareStatement("SELECT * FROM T_AM_ART_LANCA_HONORARIO WHERE NR_PROCESSO = ? ");
+        struct.setInt(1, codigoLancamento);
         ResultSet result = struct.executeQuery();
         if (result.next()){
             lancaHonorario.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));

@@ -15,6 +15,7 @@
  <div class = "col-md-6">
   <div class = "row">
   <form method = "get" action = "buscaServlet">
+  <input type = "hidden" name = "acao" value = "listarProcesso">
    <div class = "form-group">
     <label>Número do processo:</label>
     <input type = "text" name = "numeroProcesso" class = "form-control">
@@ -26,7 +27,7 @@
    <div class = "form-group">
     <label>Período</label>
     <input type = "text" placeholder = "Data de início" name = "periodoInicial" class = "form-control">
-    <input type = "text" placeholder = "Data de término"name = "periodoFinal" class = "form-control">
+    <input type = "text" placeholder = "Data de término" name = "periodoFinal" class = "form-control">
    </div>
    <div class = "form-group">
     <input type = "submit" value = "Buscar" class = "btn btn-primary">
