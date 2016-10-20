@@ -67,12 +67,12 @@ import br.com.fiap.beans.TipoDespesa;
             return listDespesa;           
         }
         
-        public LancaDespesa search(int numeroProcesso, int numeroDesp, Connection c) throws Exception{
+        public LancaDespesa search(int numeroProcesso, int numeroLanca, Connection c) throws Exception{
             LancaDespesa lancaDespesa = new LancaDespesa();
-            PreparedStatement struct = c.prepareStatement("select * from T_AM_ART_LANCA_DESPESA where NR_PROCESSO = ? AND CD_TIPO_DESPESA = ?");
+            PreparedStatement struct = c.prepareStatement("select * from T_AM_ART_LANCA_DESPESA where NR_PROCESSO = ? AND CD_LANCAMENTO = ?");
             
             struct.setInt(1, numeroProcesso);
-            struct.setInt(2, numeroDesp);
+            struct.setInt(2, numeroLanca);
             
             ResultSet result = struct.executeQuery();
             if(result.next()){
@@ -88,21 +88,21 @@ import br.com.fiap.beans.TipoDespesa;
             return lancaDespesa;
         }
         
-        public int update(int codigoDespesa, String data, Double valor, String desc, Connection c) throws Exception{
-            PreparedStatement struct = c.prepareStatement("update T_AM_ART_LANCA_DESPESA set DT_DESPESA = ?, VL_DESPESA = ?, DS_OBSERVACAO = ? where CD_TIPO_DESPESA = ?");
+        public int update(int codigoLanca, String data, Double valor, String desc, Connection c) throws Exception{
+            PreparedStatement struct = c.prepareStatement("update T_AM_ART_LANCA_DESPESA set DT_DESPESA = ?, VL_DESPESA = ?, DS_OBSERVACAO = ? where CD_LANCAMENTO = ?");
             struct.setString(1, data);
             struct.setDouble(2, valor);
             struct.setString(3, desc);
-            struct.setInt(4, codigoDespesa);
+            struct.setInt(4, codigoLanca);
             int saida = struct.executeUpdate();
             struct.close();
             return saida;
        
         }
         
-        public void delete(int codigoDespesa, Connection c) throws Exception{
-            PreparedStatement struct = c.prepareStatement("delete from T_AM_ART_LANCA_DESPESA where CD_TIPO_DESPESA = ?");
-            struct.setInt(1, codigoDespesa);
+        public void delete(int codigoLanca, Connection c) throws Exception{
+            PreparedStatement struct = c.prepareStatement("delete from T_AM_ART_LANCA_DESPESA where CD_LANCAMENTO = ?");
+            struct.setInt(1, codigoLanca);
             struct.execute();
             struct.close();
         }

@@ -50,7 +50,7 @@ public class Teste {
 			}
 			
 			//teste search
-			ld = ldDAO.search(p.getNumero(), ld.getCodigoTipoDespesa(), conexao);
+			ld = ldDAO.search(p.getNumero(), ld.getCodigoLancamento(), conexao);
 			System.out.println(ld.getCodigoLancamento() + "\n" +
 					ld.getCodigoTipoDespesa() + "\n" +
 					ld.getNumero() + "\n" +
