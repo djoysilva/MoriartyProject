@@ -28,40 +28,46 @@
 				<th></th>
 				<th></th>
 			</tr>
-			<c:forEach var="processo" items="${chaveNumero}">
 				<tr>
-					<td>${processo.numero}</td>
-					<td>${processo.codigoAdvogado}</td>
-					<td>${processo.codigoCliente}</td>
-					<td>${processo.codigoCausa}</td>
-					<td>${processo.codigoForum}</td>
-					<td>${processo.descricao}</td>
+					<td>${chaveNumero.numero}</td>
+					<td>${chaveNumero.codigoAdvogado}</td>
+					<td>${chaveNumero.codigoCliente}</td>
+					<td>${chaveNumero.codigoCausa}</td>
+					<td>${chaveNumero.codigoForum}</td>
+					<td>${chaveNumero.descricao}</td>
+					<td>${chaveNumero.dataAbertura}</td>
+					<td>${chaveNumero.dataFechamento}</td>
+					<td>${chaveNumero.diaVencimento}</td>
+					<td>${chaveNumero.resultado}</td>
+					<td>${chaveNumero.situacao}</td>
+					<td>${chaveNumero.observacao}</td>
 					<td>
-					 <fmt:formatDate pattern = "dd/MM/yyyy" value="${processo.dataAbertura.time}"/>
-					</td>
-					<td>
-					 <fmt:formatDate pattern = "dd/MM/yyyy" value="${processo.dataFechamento}"/>
-					</td>
-					<td>${processo.diaVencimento}</td>
-					<td>${processo.resultado}</td>
-					<td>${processo.situacao}</td>
-					<td>${processo.observacao}</td>
-					<td>
-					 <c:url value="buscaServlet" var="linkHonorario">
-						<c:param name="numeroProcesso" value="${processo.numero}"/>
-						<c:param name="acao" value="abrirFormHonorario"/>
+					 <c:url value = "buscaServlet" var = "linkLancarHonorario">
+						<c:param name = "numeroProcesso" value = "${chaveHonorario.codigoLancamento}"/>
+						<c:param name = "acao" value = "abrirFormHonorario"/>
 					</c:url>
-					<a href="${link}" class="btn btn-info btn-sm">Alterar</a>
+					<a href = "${linkLancarHonorario}" class = "btn btn-info btn-sm">Lançar Honorário</a>
+
+					<c:url value = "buscaServlet" var = "linkConsultarHonorario">
+						<c:param name = "numeroProcesso" value = "${chaveHonorario.codigoLancamento}"/>
+						<c:param name = "acao" value = "abrirListaHonorario"/>
+					</c:url>
+					<a href = "${linkConsultarHonorario}" class = "btn btn-info btn-sm">Consultar Honorário</a>
 					</td>
 					<td>
-					<c:url value="buscaServlet" var="linkTarefa">
-						<c:param name="numeroProcesso" value="${processo.numero}"/>
-						<c:param name="acao" value="abrirFormDespesa"/>
+					<c:url value = "buscaServlet" var = "linkLancarDespesa">
+						<c:param name = "numeroProcesso" value = "${chaveDespesa.codigoLancamento}"/>
+						<c:param name = "acao" value = "abrirFormDespesa"/>
 				    </c:url>
-				    <a href="${link}" class="btn btn-info btn-sm">Alterar</a>
+				    <a href = "${linkLancarDespesa}" class = "btn btn-info btn-sm">Lançar Despesa</a>
+
+				    <c:url value = "buscaServlet" var = "linkConsultarDespesa">
+						<c:param name = "numeroProcesso" value = "${chaveDespesa.codigoLancamento}"/>
+						<c:param name = "acao" value = "abrirListaDespesa"/>
+					</c:url>
+					<a href = "${linkConsultarDespesa}" class = "btn btn-info btn-sm">Consultar Despesa</a>
 					</td>
 				</tr>
-			</c:forEach>
 		</table>
 	</div>
 </body>

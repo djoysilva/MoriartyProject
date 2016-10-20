@@ -69,7 +69,7 @@ import br.com.fiap.beans.TipoDespesa;
         
         public LancaDespesa search(int numeroProcesso, Connection c) throws Exception{
             LancaDespesa lancaDespesa = new LancaDespesa();
-            PreparedStatement struct = c.prepareStatement("select NR_PROCESSO from T_AM_ART_LANCA_DESPESA where NR_PROCESSO = ?");
+            PreparedStatement struct = c.prepareStatement("select * from T_AM_ART_LANCA_DESPESA where NR_PROCESSO = ?");
             struct.setInt(1, numeroProcesso);
             
             ResultSet result = struct.executeQuery();
