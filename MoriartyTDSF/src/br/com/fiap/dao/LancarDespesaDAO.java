@@ -25,30 +25,23 @@ import br.com.fiap.beans.TipoDespesa;
  * */
  
     public class LancarDespesaDAO{
-        public void create(Connection c) throws Exception{
-            String comando = "INSERT INTO T_AM_ART_LANCA_DESPESA (SQ_AM_ART_LANCA_DESPESA, DT_DESPESA, VL_DESPESA, DS_OBSERVACAO) values (?, ?, ?, ?, ?)";
-            String comando2 = "SELECT NR_PROCESSO FROM T_AM_ART_PROCESSO"; 
-            String comando3 = "SELECT CD_TIPO_TAREFA FROM T_AM_ART_TIPO_TAREFA";
+    	
+        public void create(Processo p, int cdTarefa, Connection c) throws Exception{
+            String comando = "INSERT INTO T_AM_ART_LANCA_DESPESA (CD_LANCAMENTO, CD_TIPO_DESPESA, NR_PROCESSO,  DT_DESPESA, VL_DESPESA, DS_OBSERVACAO) values (?, ?, ?, ?, ?, ?)";
+                       
             PreparedStatement structInsert = c.prepareStatement(comando);
-            PreparedStatement structSearch = c.prepareStatement(comando2);
-            PreparedStatement structSearch1 = c.prepareStatement(comando3);
-            ResultSet result = structSearch.executeQuery();
-            ResultSet result1 = structSearch1.executeQuery();
             LancaDespesa lancaDespesa = new LancaDespesa();
-            Processo processo = new Processo();
-        	TipoDespesa despesa = new TipoDespesa();    
-        	
-        	processo.setNumero(result.getInt("NR_PROCESSO"));
-        	despesa.setCodigo(result1.getInt("CD_TIPO_DESPESA"));
-        	        	
-            structInsert.setInt(1, lancaDespesa.getCodigoLancamento());
-            structInsert.setInt(2, processo.getNumero());
-            structInsert.setInt(3, despesa.getCodigo());
-            structInsert.setString(2, lancaDespesa.getDataDespesa());
-            structInsert.setDouble(3, lancaDespesa.getValorDespesa());
-            structInsert.setString(4, lancaDespesa.getDescricao());
+           
+        	structInsert.setInt(1, lancaDespesa.getCodigoLancamento());
+            structInsert.setInt(2, p.getNumero());
+            structInsert.setInt(3, cdTarefa);
+            structInsert.setString(4, lancaDespesa.getDataDespesa());
+            structInsert.setDouble(5, lancaDespesa.getValorDespesa());
+            structInsert.setString(6, lancaDespesa.getDescricao());
             structInsert.execute();         
             structInsert.close();
+            
+            System.out.println("AAAAAAA");
         }
         
         public List<LancaDespesa> readList(Connection c) throws Exception{

@@ -2,10 +2,10 @@ package br.com.fiap.beans;
 
 public class Processo {
 	private int numero;
-	private Advogado codigoAdvogado;
-	private Cliente codigoCliente;
-	private TipoCausa codigoCausa;
-	private Forum codigoForum;
+	private int codigoAdvogado;
+	private int codigoCliente;
+	private int codigoCausa;
+	private int codigoForum;
 	//private Forum2 codigoForum;
 	private String descricao;
 	private String dataAbertura;
@@ -21,28 +21,28 @@ public class Processo {
 	public void setNumero(int numero) {
 		this.numero = numero;
 	}
-	public Advogado getCodigoAdvogado() {
+	public int getCodigoAdvogado() {
 		return codigoAdvogado;
 	}
-	public void setCodigoAdvogado(Advogado codigoAdvogado) {
+	public void setCodigoAdvogado(int codigoAdvogado) {
 		this.codigoAdvogado = codigoAdvogado;
 	}
-	public Cliente getCodigoCliente() {
+	public int getCodigoCliente() {
 		return codigoCliente;
 	}
-	public void setCodigoCliente(Cliente codigoCliente) {
+	public void setCodigoCliente(int codigoCliente) {
 		this.codigoCliente = codigoCliente;
 	}
-	public TipoCausa getCodigoCausa() {
+	public int getCodigoCausa() {
 		return codigoCausa;
 	}
-	public void setCodigoCausa(TipoCausa codigoCausa) {
+	public void setCodigoCausa(int codigoCausa) {
 		this.codigoCausa = codigoCausa;
 	}
-	public Forum getCodigoForum() {
+	public int getCodigoForum() {
 		return codigoForum;
 	}
-	public void setCodigoForum(Forum codigoForum) {
+	public void setCodigoForum(int codigoForum) {
 		this.codigoForum = codigoForum;
 	}
 	public String getDescricao() {
@@ -87,7 +87,7 @@ public class Processo {
 	public void setObservacao(String observacao) {
 		this.observacao = observacao;
 	}
-	public Processo(int numero, Advogado codigoAdvogado, Cliente codigoCliente, TipoCausa codigoCausa, Forum codigoForum,
+	public Processo(int numero, int codigoAdvogado, int codigoCliente, int codigoCausa, int codigoForum,
 			String descricao, String dataAbertura, String dataFechamento, short diaVencimento, short resultado,
 			short situacao, String observacao) {
 		super();
@@ -108,5 +108,10 @@ public class Processo {
 		super();
 	}
 
+	public String getTudo() {
+		return numero + "\n" + codigoAdvogado+ "\n" + codigoCliente+ "\n"+ codigoCausa+ "\n"+
+				codigoForum+ "\n" + descricao+ "\n" + dataAbertura+ "\n" + dataFechamento+ "\n" 
+				+ diaVencimento+ "\n" + resultado+ "\n" + situacao+ "\n" + observacao;
+	}
 
 }
