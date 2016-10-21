@@ -11,6 +11,8 @@
 	<%@ include file="menu.jsp"%>
 	<div class="container">
 		<h1>Lista de processos</h1>
+		
+		
 		<table class="table">
 			<tr>
 				<th>Número</th>
@@ -43,26 +45,26 @@
 					<td>${chaveNumero.observacao}</td>
 					<td>
 					 <c:url value = "buscaServlet" var = "linkLancarHonorario">
-						<c:param name = "numeroProcesso" value = "${chaveHonorario.codigoLancamento}"/>
+						<c:param name = "numeroProcessoRecebido" value = "${chaveNumero.numero}"/>
 						<c:param name = "acao" value = "abrirFormHonorario"/>
 					</c:url>
 					<a href = "${linkLancarHonorario}" class = "btn btn-info btn-sm">Lançar Honorário</a>
 
 					<c:url value = "buscaServlet" var = "linkConsultarHonorario">
-						<c:param name = "numeroProcesso" value = "${chaveHonorario.codigoLancamento}"/>
+						<c:param name = "numeroProcessoRecebido" value = "${chaveNumero.numero}"/>
 						<c:param name = "acao" value = "abrirListaHonorario"/>
 					</c:url>
 					<a href = "${linkConsultarHonorario}" class = "btn btn-info btn-sm">Consultar Honorário</a>
 					</td>
 					<td>
 					<c:url value = "buscaServlet" var = "linkLancarDespesa">
-						<c:param name = "numeroProcesso" value = "${chaveDespesa.codigoLancamento}"/>
+						<c:param name = "numeroProcessoRecebido" value = "${chaveNumero.numero}"/>
 						<c:param name = "acao" value = "abrirFormDespesa"/>
 				    </c:url>
 				    <a href = "${linkLancarDespesa}" class = "btn btn-info btn-sm">Lançar Despesa</a>
 
 				    <c:url value = "buscaServlet" var = "linkConsultarDespesa">
-						<c:param name = "numeroProcesso" value = "${chaveDespesa.codigoLancamento}"/>
+						<c:param name = "numeroProcessoRecebido" value = "${chaveNumero.numero}"/>
 						<c:param name = "acao" value = "abrirListaDespesa"/>
 					</c:url>
 					<a href = "${linkConsultarDespesa}" class = "btn btn-info btn-sm">Consultar Despesa</a>
