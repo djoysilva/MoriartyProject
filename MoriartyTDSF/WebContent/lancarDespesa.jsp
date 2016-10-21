@@ -17,18 +17,18 @@
   <input type = "hidden" name = "acao" value = "lancarDespesa">
    <div class = "form-group">
     <label for = "idCodDesp">Código Lançamento</label>
-    <input type = "text" name = "codigoLancamentoDespesa" id = "idCodDesp" class = "form-control">
+    <input type = "hidden" name = "codigoLancamentoDespesa" id = "idCodDesp" class = "form-control">
    </div>
    <div class = "form-group">
-    <label for = "idCodTarefa">Código Tipo Tarefa</label>
-    <input type = "text" name = "codigoTipoTarefa" id = "idCodTarefa" class = "form-control" value = "${chaveDespesa.codigoTipoDespesa}" readonly>
+    <label for = "idCodTarefa">Código Tipo Despesa</label>
+    <input type = "text" placeholder = "1, 2, 3, 4, 5 ou 6" name = "codigoTipoDespesa" id = "idCodTarefa" class = "form-control" >
    </div>
    <div class = "form-group">
     <label for = "idCodProcesso">Código Processo</label>
-    <input type = "text" name = "codigoProcesso" id = "idCodProcesso" class = "form-control" value = "${chaveDespesa.numero}" readonly >
+    <input type = "text" name = "codigoProcesso" id = "idCodProcesso" class = "form-control" value = "${chaveProcessoRecebido}" readonly >
    </div>
    <div class = "form-group">
-    <label for = "idDataDespesa">Data Despesa/label>
+    <label for = "idDataDespesa">Data Despesa</label>
     <input type = "text" name = "dataDespesa" id = "idDataDespesa" class = "form-control">
    </div>
    <div class = "form-group">

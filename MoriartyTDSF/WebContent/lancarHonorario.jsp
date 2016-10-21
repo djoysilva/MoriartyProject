@@ -16,16 +16,16 @@
   <form action = "buscaServlet" method = "post">
   <input type = "hidden" name = "acao" value = "lancarHonorario">
    <div class = "form-group">
-    <label for = "idCodHon">Código Lançamento</label>
-    <input type = "text" name = "codigoLancamentoHonorario" id = "idCodHon" class = "form-control">
+    
+    <input type = "hidden" name = "codigoLancamentoHonorario" id = "idCodHon" class = "form-control">
    </div>
    <div class = "form-group">
     <label for = "idCodTarefa">Código Tipo Tarefa</label>
-    <input type = "text" name = "codigoTipoTarefa" id = "idCodTarefa" class = "form-control" value = "${chaveHonorario.codigoTipoTarefa}" readonly>
+    <input type = "text" placeholder = "1, 2, 3 ou 4" name = "codigoTipoTarefa" id = "idCodTarefa" class = "form-control">
    </div>
    <div class = "form-group">
     <label for = "idCodProcesso">Código Processo</label>
-    <input type = "text" name = "codigoProcesso" id = "idCodProcesso" class = "form-control" value = "${chaveHonorario.codigoProcesso}" readonly>
+    <input type = "text" name = "codigoProcesso" id = "idCodProcesso" class = "form-control" value = "${chaveProcessoRecebido}" readonly>
    </div>
    <div class = "form-group">
     <label for = "idDataHonorario">Data Honorário</label>

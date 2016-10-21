@@ -12,6 +12,7 @@
 <div class = "container">
  <h1>Buscar processo</h1>
  
+ 
  <div class = "col-md-6">
   <div class = "row">
   <form method = "get" action = "buscaServlet">
@@ -19,15 +20,6 @@
    <div class = "form-group">
     <label>Número do processo:</label>
     <input type = "text" name = "numeroProcesso" class = "form-control">
-   </div>
-   <div class = "form-group">
-    <label>Nome do cliente:</label>
-    <input type = "text" name = "nomeCliente" class = "form-control">
-   </div>
-   <div class = "form-group">
-    <label>Período</label>
-    <input type = "text" placeholder = "Data de início" name = "periodoInicial" class = "form-control">
-    <input type = "text" placeholder = "Data de término" name = "periodoFinal" class = "form-control">
    </div>
    <div class = "form-group">
     <input type = "submit" value = "Buscar" class = "btn btn-primary">

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_AbhCkJbHEeaSa_p6jeQPGQ" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_AbhCkZbHEeaSa_p6jeQPGQ" bindingContexts="_AbhsnZbHEeaSa_p6jeQPGQ">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LancarHonorarioDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/LancarHonorarioDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/LancarHonorarioDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LancarDespesaDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/LancarDespesaDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/LancarDespesaDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;TesteConexao.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/testes/TesteConexao.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/src/br/com/fiap/testes/TesteConexao.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;menu.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/menu.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/WebContent/menu.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;includes.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/includes.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/WebContent/includes.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LancarHonorarioDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/LancarHonorarioDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/LancarHonorarioDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;alterarDespesa.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/alterarDespesa.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/WebContent/alterarDespesa.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;alterarHonorario.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/alterarHonorario.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/WebContent/alterarHonorario.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;listaHonorario.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/listaHonorario.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/WebContent/listaHonorario.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LancarDespesaDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/LancarDespesaDAO.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/LancarDespesaDAO.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;listaDespesa.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/listaDespesa.jsp&quot;>&#xD;&#xA;&lt;persistable path=&quot;/MoriartyTDSF/WebContent/listaDespesa.jsp&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_AbhCkZbHEeaSa_p6jeQPGQ" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_AbhCkpbHEeaSa_p6jeQPGQ" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
@@ -89,22 +89,21 @@
           <tags>persp.showIn:org.eclipse.tm.terminal.view.ui.TerminalsView</tags>
           <tags>persp.actionSet:org.eclipse.wst.ws.explorer.explorer</tags>
           <children xsi:type="basic:PartSashContainer" xmi:id="_AbhClZbHEeaSa_p6jeQPGQ" selectedElement="_AbhCm5bHEeaSa_p6jeQPGQ" horizontal="true">
-            <children xsi:type="basic:PartStack" xmi:id="_AbhClpbHEeaSa_p6jeQPGQ" elementId="topLeft" containerData="2500" selectedElement="_AbhCl5bHEeaSa_p6jeQPGQ">
+            <children xsi:type="basic:PartStack" xmi:id="_AbhClpbHEeaSa_p6jeQPGQ" elementId="topLeft" containerData="2044" selectedElement="_AbhCl5bHEeaSa_p6jeQPGQ">
               <children xsi:type="advanced:Placeholder" xmi:id="_AbhCl5bHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.navigator.ProjectExplorer" ref="_AbhD_ZbHEeaSa_p6jeQPGQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_AbhCmJbHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.views.ResourceNavigator" toBeRendered="false" ref="_AbhEG5bHEeaSa_p6jeQPGQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_AbhCmZbHEeaSa_p6jeQPGQ" elementId="org.eclipse.jdt.ui.TypeHierarchy" toBeRendered="false" ref="_AbhEHJbHEeaSa_p6jeQPGQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_AbhCmpbHEeaSa_p6jeQPGQ" elementId="org.eclipse.jdt.ui.PackagesView" toBeRendered="false" ref="_AbhEHZbHEeaSa_p6jeQPGQ"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_AbhCm5bHEeaSa_p6jeQPGQ" containerData="7500" selectedElement="_AbhCoZbHEeaSa_p6jeQPGQ">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_AbhCnJbHEeaSa_p6jeQPGQ" containerData="5926" selectedElement="_AbhCnZbHEeaSa_p6jeQPGQ" horizontal="true">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_AbhCm5bHEeaSa_p6jeQPGQ" containerData="7956" selectedElement="_AbhCnJbHEeaSa_p6jeQPGQ">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_AbhCnJbHEeaSa_p6jeQPGQ" containerData="7229" selectedElement="_AbhCnZbHEeaSa_p6jeQPGQ" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_AbhCnZbHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.editorss" containerData="7000" ref="_AbhD6ZbHEeaSa_p6jeQPGQ"/>
                 <children xsi:type="basic:PartStack" xmi:id="_AbhCnpbHEeaSa_p6jeQPGQ" elementId="topRight" containerData="3000" selectedElement="_AbhCn5bHEeaSa_p6jeQPGQ">
                   <children xsi:type="advanced:Placeholder" xmi:id="_AbhCn5bHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.views.ContentOutline" ref="_AbhEUZbHEeaSa_p6jeQPGQ"/>
                   <children xsi:type="advanced:Placeholder" xmi:id="_AbhCoJbHEeaSa_p6jeQPGQ" elementId="org.eclipse.mylyn.tasks.ui.views.tasks" ref="_AbhpwZbHEeaSa_p6jeQPGQ"/>
                 </children>
               </children>
-              <children xsi:type="basic:PartStack" xmi:id="_AbhCoZbHEeaSa_p6jeQPGQ" elementId="bottomRight" containerData="4074" selectedElement="_AbhCqZbHEeaSa_p6jeQPGQ">
-                <tags>active</tags>
+              <children xsi:type="basic:PartStack" xmi:id="_AbhCoZbHEeaSa_p6jeQPGQ" elementId="bottomRight" containerData="2771" selectedElement="_AbhCqZbHEeaSa_p6jeQPGQ">
                 <children xsi:type="advanced:Placeholder" xmi:id="_AbhCopbHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.views.AllMarkersView" ref="_AbhEHpbHEeaSa_p6jeQPGQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_AbhCo5bHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.views.PropertySheet" ref="_AbhEJJbHEeaSa_p6jeQPGQ"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_AbhCpJbHEeaSa_p6jeQPGQ" elementId="org.eclipse.wst.server.ui.ServersView" ref="_AbhEMZbHEeaSa_p6jeQPGQ"/>
@@ -162,8 +161,8 @@
           <tags>persp.perspSC:org.eclipse.wst.jsdt.ui.JavaPerspective</tags>
           <tags>persp.showIn:org.eclipse.wst.jsdt.ui.PackageExplorer</tags>
           <tags>persp.perspSC:org.eclipse.wst.xml.ui.perspective</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_y8Yu4ZcREeam7bUUtQMoLQ" selectedElement="_y8Yu9JcREeam7bUUtQMoLQ">
-            <children xsi:type="basic:PartSashContainer" xmi:id="_y8Yu4pcREeam7bUUtQMoLQ" containerData="4138" selectedElement="_y8Yu75cREeam7bUUtQMoLQ">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_y8Yu4ZcREeam7bUUtQMoLQ" selectedElement="_y8Yu4pcREeam7bUUtQMoLQ">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_y8Yu4pcREeam7bUUtQMoLQ" containerData="4444" selectedElement="_y8Yu75cREeam7bUUtQMoLQ">
               <children xsi:type="basic:PartSashContainer" xmi:id="_y8Yu45cREeam7bUUtQMoLQ" containerData="4500" selectedElement="_y8Yu5JcREeam7bUUtQMoLQ" horizontal="true">
                 <children xsi:type="basic:PartStack" xmi:id="_y8Yu5JcREeam7bUUtQMoLQ" elementId="org.eclipse.debug.internal.ui.NavigatorFolderView" containerData="5000" selectedElement="_y8Yu5ZcREeam7bUUtQMoLQ">
                   <tags>org.eclipse.e4.primaryNavigationStack</tags>
@@ -189,7 +188,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartStack" xmi:id="_y8Yu9JcREeam7bUUtQMoLQ" elementId="org.eclipse.debug.internal.ui.ConsoleFolderView" containerData="5862" selectedElement="_y8Yu9ZcREeam7bUUtQMoLQ">
+            <children xsi:type="basic:PartStack" xmi:id="_y8Yu9JcREeam7bUUtQMoLQ" elementId="org.eclipse.debug.internal.ui.ConsoleFolderView" containerData="5556" selectedElement="_y8Yu9ZcREeam7bUUtQMoLQ">
               <tags>org.eclipse.e4.secondaryDataStack</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_y8Yu9ZcREeam7bUUtQMoLQ" elementId="org.eclipse.ui.console.ConsoleView" ref="_AbhEO5bHEeaSa_p6jeQPGQ"/>
               <children xsi:type="advanced:Placeholder" xmi:id="_y8Yu9pcREeam7bUUtQMoLQ" elementId="org.eclipse.ui.views.TaskList" ref="_AbhEOpbHEeaSa_p6jeQPGQ"/>
@@ -228,85 +227,70 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_AbhD6ZbHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.editorss" selectedElement="_AbhD6pbHEeaSa_p6jeQPGQ">
-      <children xsi:type="basic:PartStack" xmi:id="_AbhD6pbHEeaSa_p6jeQPGQ" elementId="PartStack@359ae83a" selectedElement="_KOf8wJcNEeam7bUUtQMoLQ">
+      <children xsi:type="basic:PartStack" xmi:id="_AbhD6pbHEeaSa_p6jeQPGQ" elementId="PartStack@359ae83a" selectedElement="_bNIx4Jc-Eea6RofrQ3fQPQ">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
-        <children xsi:type="basic:Part" xmi:id="_KOf8wJcNEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BuscaServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BuscaServlet.java&quot; partName=&quot;BuscaServlet.java&quot; title=&quot;BuscaServlet.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/servlets/BuscaServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/src/br/com/fiap/servlets/BuscaServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2795&quot; selectionTopPixel=&quot;498&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <tags>active</tags>
+        <children xsi:type="basic:Part" xmi:id="_2SVn8JcaEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LancarHonorarioDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LancarHonorarioDAO.java&quot; partName=&quot;LancarHonorarioDAO.java&quot; title=&quot;LancarHonorarioDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/LancarHonorarioDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/LancarHonorarioDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;13&quot; selectionLength=&quot;37&quot; selectionOffset=&quot;5024&quot; selectionTopPixel=&quot;1612&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_1V0LwJcOEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="alterarDespesa.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;alterarDespesa.jsp&quot; partName=&quot;alterarDespesa.jsp&quot; title=&quot;alterarDespesa.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/alterarDespesa.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/alterarDespesa.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_GDoSQJciEea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="BuscaServlet.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BuscaServlet.java&quot; partName=&quot;BuscaServlet.java&quot; title=&quot;BuscaServlet.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/servlets/BuscaServlet.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/src/br/com/fiap/servlets/BuscaServlet.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;9886&quot; selectionTopPixel=&quot;4583&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_5b-v4JcOEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="alterarHonorario.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;alterarHonorario.jsp&quot; partName=&quot;alterarHonorario.jsp&quot; title=&quot;alterarHonorario.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/alterarHonorario.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/alterarHonorario.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_8VkzMJcOEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="busca.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
+        <children xsi:type="basic:Part" xmi:id="_s2Ku0JciEea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="busca.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;busca.jsp&quot; partName=&quot;busca.jsp&quot; title=&quot;busca.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/busca.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/busca.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_BJVdIJcPEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="lancarDespesa.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;lancarDespesa.jsp&quot; partName=&quot;lancarDespesa.jsp&quot; title=&quot;lancarDespesa.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/lancarDespesa.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/lancarDespesa.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_EF0cYJcPEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="lancarHonorario.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
+        <children xsi:type="basic:Part" xmi:id="_d23c8JctEea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="lancarHonorario.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;lancarHonorario.jsp&quot; partName=&quot;lancarHonorario.jsp&quot; title=&quot;lancarHonorario.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/lancarHonorario.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/lancarHonorario.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_H2vwUJcPEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="listaProcesso.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;listaProcesso.jsp&quot; partName=&quot;listaProcesso.jsp&quot; title=&quot;listaProcesso.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/listaProcesso.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/listaProcesso.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_Lzf5wJcPEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="listaDespesa.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
+        <children xsi:type="basic:Part" xmi:id="_bNIx4Jc-Eea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="listaDespesa.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;listaDespesa.jsp&quot; partName=&quot;listaDespesa.jsp&quot; title=&quot;listaDespesa.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/listaDespesa.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/listaDespesa.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
           <tags>removeOnHide</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_MxAq4JcPEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="listaHonorario.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
+        <children xsi:type="basic:Part" xmi:id="_ZQr20Jc_Eea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LancarDespesaDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LancarDespesaDAO.java&quot; partName=&quot;LancarDespesaDAO.java&quot; title=&quot;LancarDespesaDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/LancarDespesaDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/LancarDespesaDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;47&quot; selectionOffset=&quot;5477&quot; selectionTopPixel=&quot;1319&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <tags>Editor</tags>
+          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>removeOnHide</tags>
+        </children>
+        <children xsi:type="basic:Part" xmi:id="_tD81FpdDEea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="listaHonorario.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;listaHonorario.jsp&quot; partName=&quot;listaHonorario.jsp&quot; title=&quot;listaHonorario.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/listaHonorario.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/listaHonorario.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_MFucwJcQEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ConnectionFactory.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ConnectionFactory.java&quot; partName=&quot;ConnectionFactory.java&quot; title=&quot;ConnectionFactory.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/conexao/ConnectionFactory.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/src/br/com/fiap/conexao/ConnectionFactory.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;679&quot; selectionTopPixel=&quot;257&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_MGLyIJdEEea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="alterarHonorario.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;alterarHonorario.jsp&quot; partName=&quot;alterarHonorario.jsp&quot; title=&quot;alterarHonorario.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/alterarHonorario.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/alterarHonorario.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_IqahkJcSEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="ProcessoDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;ProcessoDAO.java&quot; partName=&quot;ProcessoDAO.java&quot; title=&quot;ProcessoDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/ProcessoDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/ProcessoDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;66&quot; selectionOffset=&quot;1887&quot; selectionTopPixel=&quot;410&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_MVn8UJdEEea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="alterarDespesa.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;alterarDespesa.jsp&quot; partName=&quot;alterarDespesa.jsp&quot; title=&quot;alterarDespesa.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/alterarDespesa.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/alterarDespesa.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
           <tags>removeOnHide</tags>
         </children>
-        <children xsi:type="basic:Part" xmi:id="_nsYEIJcaEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LancarDespesaDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LancarDespesaDAO.java&quot; partName=&quot;LancarDespesaDAO.java&quot; title=&quot;LancarDespesaDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/LancarDespesaDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/LancarDespesaDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;34&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;3027&quot; selectionTopPixel=&quot;940&quot;/>&#xD;&#xA;&lt;/editor>"/>
+        <children xsi:type="basic:Part" xmi:id="_dl_7IJdIEea6RofrQ3fQPQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="menu.jsp" iconURI="platform:/plugin/org.eclipse.jst.pagedesigner/icons/PD_Plugin.gif" closeable="true">
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jst.pagedesigner.PageDesignerEditor&quot; name=&quot;menu.jsp&quot; partName=&quot;menu.jsp&quot; title=&quot;menu.jsp&quot; tooltip=&quot;MoriartyTDSF/WebContent/menu.jsp&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/WebContent/menu.jsp&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
-          <tags>removeOnHide</tags>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_2SVn8JcaEeam7bUUtQMoLQ" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LancarHonorarioDAO.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LancarHonorarioDAO.java&quot; partName=&quot;LancarHonorarioDAO.java&quot; title=&quot;LancarHonorarioDAO.java&quot; tooltip=&quot;MoriartyTDSF/src/br/com/fiap/dao/LancarHonorarioDAO.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/MoriartyTDSF/src/br/com/fiap/dao/LancarHonorarioDAO.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;45&quot; selectionLength=&quot;4&quot; selectionOffset=&quot;2802&quot; selectionTopPixel=&quot;765&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>org.eclipse.jst.pagedesigner.PageDesignerEditor</tags>
           <tags>removeOnHide</tags>
         </children>
       </children>
@@ -430,8 +414,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view/>"/>
       <tags>View</tags>
       <tags>categoryTag:General</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_AbhEPJbHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.console.ConsoleView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -623,13 +605,13 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Abhpx5bHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="__BfRwJcMEeam7bUUtQMoLQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_AbjhJZbHEeaSa_p6jeQPGQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_YPNZQJcfEea6RofrQ3fQPQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_AbjhJZbHEeaSa_p6jeQPGQ"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_Abhp2ZbHEeaSa_p6jeQPGQ" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
         <children xsi:type="menu:ToolBarSeparator" xmi:id="_Abhp2pbHEeaSa_p6jeQPGQ" elementId="additions" toBeRendered="false"/>
       </children>
-      <children xsi:type="menu:ToolBar" xmi:id="_AbhqFZbHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation">
+      <children xsi:type="menu:ToolBar" xmi:id="_AbhqFZbHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.edit.text.actionSet.presentation" visible="false">
         <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_AbhqJJbHEeaSa_p6jeQPGQ" elementId="org.eclipse.debug.ui.launchActionSet">
@@ -656,7 +638,10 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_AbhqWpbHEeaSa_p6jeQPGQ" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="__BkxUJcMEeam7bUUtQMoLQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Abjgw5bHEeaSa_p6jeQPGQ"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_YPXKQJcfEea6RofrQ3fQPQ" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_Abjgw5bHEeaSa_p6jeQPGQ"/>
+      </children>
+      <children xsi:type="menu:ToolBar" xmi:id="_Y3Ss8JcfEea6RofrQ3fQPQ" elementId="org.eclipse.jdt.ui.CompilationUnitEditor" visible="false">
+        <tags>Draggable</tags>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_AbhqZZbHEeaSa_p6jeQPGQ" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>

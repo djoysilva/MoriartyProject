@@ -17,27 +17,27 @@
   <input type = "hidden" name = "acao" value = "alterarHonorario">
    <div class = "form-group">
     <label for = "idCodHon">Código Lançamento</label>
-    <input type = "text" name = "codigoLancamentoHonorario" id = "idCodHon" class = "form-control" value = "${chaveHonorario.codigoLancamento}" readonly>
+    <input type = "text" name = "codigoLancamentoHonorario" id = "idCodHon" class = "form-control" value = "${chaveHonorarioAlterado.codigoLancamento}" readonly>
    </div>
    <div class = "form-group">
     <label for = "idCodTarefa">Código Tipo Tarefa</label>
-    <input type = "text" name = "codigoTipoTarefa" id = "idCodTarefa" class = "form-control" value = "${chaveHonorario.codigoTipoTarefa}">
+    <input type = "text" name = "codigoTipoTarefa" id = "idCodTarefa" class = "form-control" value = "${chaveHonorarioAlterado.codigoTipoTarefa}">
    </div>
    <div class = "form-group">
     <label for = "idCodProcesso">Código Processo</label>
-    <input type = "text" name = "codigoProcesso" id = "idCodProcesso" class = "form-control" value = "${chaveHonorario.codigoProcesso}">
+    <input type = "text" name = "codigoProcesso" id = "idCodProcesso" class = "form-control" value = "${chaveHonorarioAlterado.codigoProcesso}" readonly>
    </div>
    <div class = "form-group">
     <label for = "idDataHonorario">Data Honorário</label>
-    <input type = "text" name = "dataHonorario" id = "idDataHonorario" class = "form-control" value = "${chaveHonorario.dataHonorario}">
+    <input type = "text" name = "dataHonorario" id = "idDataHonorario" class = "form-control" value = "${chaveHonorarioAlterado.dataHonorario}">
    </div>
    <div class = "form-group">
     <label for = "idQuantHora">Quantidade Horas</label>
-    <input type = "text" name = "quantidadeHora" id = "idQuantHora" class = "form-control" value = "${chaveHonorario.quantidadeHora}">
+    <input type = "text" name = "quantidadeHora" id = "idQuantHora" class = "form-control" value = "${chaveHonorarioAlterado.quantidadeHora}">
    </div>
    <div class = "form-group">
    <label for = "idObs">Observação</label>
-   <input type = "text" name = "observacao" id = "idObs" class = "form-control" value = "${chaveHonorario.observacao}">
+   <input type = "text" name = "observacao" id = "idObs" class = "form-control" value = "${chaveHonorarioAlterado.observacao}">
    </div>
    <input type = "submit" value = "Alterar" class = "btn btn-primary">
   </form>

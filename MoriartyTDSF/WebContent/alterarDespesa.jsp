@@ -17,27 +17,27 @@
   <input type = "hidden" name = "acao" value = "alterarDespesa">
    <div class = "form-group">
     <label for = "idCodDesp">Código Lançamento</label>
-    <input type = "text" name = "codigoLancamentoDespesa" id = "idCodDesp" class = "form-control" value = "${chaveDespesa.codigoLancamento}" readonly>
+    <input type = "text" name = "codigoLancamentoDespesa" id = "idCodDesp" class = "form-control" value = "${chaveDespesaAlterada.codigoLancamento}" readonly>
    </div>
    <div class = "form-group">
-    <label for = "idCodTarefa">Código Tipo Tarefa</label>
-    <input type = "text" name = "codigoTipoTarefa" id = "idCodTarefa" class = "form-control" value = "${chaveDespesa.codigoTipoDespesa}" >
+    <label for = "idCodTarefa">Código Tipo Despesa</label>
+    <input type = "text" name = "codigoTipoDespesa" id = "idCodTarefa" class = "form-control" value = "${chaveDespesaAlterada.codigoTipoDespesa}" >
    </div>
    <div class = "form-group">
     <label for = "idCodProcesso">Código Processo</label>
-    <input type = "text" name = "codigoProcesso" id = "idCodProcesso" class = "form-control" value = "${chaveDespesa.numero}" >
+    <input type = "text" name = "codigoProcesso" id = "idCodProcesso" class = "form-control" value = "${chaveDespesaAlterada.numero}" readonly >
    </div>
    <div class = "form-group">
     <label for = "idDataDespesa">Data Despesa/label>
-    <input type = "text" name = "dataDespesa" id = "idDataDespesa" class = "form-control" value = "${chaveDespesa.dataDespesa}" >
+    <input type = "text" name = "dataDespesa" id = "idDataDespesa" class = "form-control" value = "${chaveDespesaAlterada.dataDespesa}" >
    </div>
    <div class = "form-group">
     <label for = "idValorDespesa">Valor despesa</label>
-    <input type = "text" name = "valorDespesa" id = "idValorDespesa" class = "form-control" value = "${chaveDespesa.valorDespesa}" >
+    <input type = "text" name = "valorDespesa" id = "idValorDespesa" class = "form-control" value = "${chaveDespesaAlterada.valorDespesa}" >
    </div>
    <div class = "form-group">
    <label for = "idDescricao">Descrição</label>
-   <input type = "text" name = "descricao" id = "idDescricao" class = "form-control" value = "${chaveDespesa.descricao}" >
+   <input type = "text" name = "descricao" id = "idDescricao" class = "form-control" value = "${chaveDespesaAlterada.descricao}" >
    </div>
    <input type = "submit" value = "Alterar" class = "btn btn-primary">
   </form>

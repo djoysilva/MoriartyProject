@@ -31,8 +31,8 @@ import br.com.fiap.beans.TipoDespesa;
             
             PreparedStatement struct = c.prepareStatement(comando);
            
-            struct.setInt(1, lancaDespesa.getNumero());
-        	struct.setInt(2, lancaDespesa.getCodigoTipoDespesa());
+        	struct.setInt(1, lancaDespesa.getCodigoTipoDespesa());
+        	struct.setInt(2, lancaDespesa.getNumero());
             struct.setString(3, lancaDespesa.getDataDespesa());
             struct.setDouble(4, lancaDespesa.getValorDespesa());
             struct.setString(5, lancaDespesa.getDescricao());
@@ -67,10 +67,11 @@ import br.com.fiap.beans.TipoDespesa;
             return listDespesa;           
         }
         
-        public LancaDespesa search(int numeroProcesso, Connection c) throws Exception{
+        public LancaDespesa search(int numeroProcesso,  Connection c) throws Exception{
             LancaDespesa lancaDespesa = new LancaDespesa();
             PreparedStatement struct = c.prepareStatement("select * from T_AM_ART_LANCA_DESPESA where NR_PROCESSO = ?");
             struct.setInt(1, numeroProcesso);
+            //struct.setInt(2, codigoLanca);
             
             ResultSet result = struct.executeQuery();
             if(result.next()){
@@ -85,12 +86,31 @@ import br.com.fiap.beans.TipoDespesa;
             return lancaDespesa;
         }
         
-        public int update(int codigoDespesa, String data, Double valor, String desc, Connection c) throws Exception{
+        public LancaDespesa buscaDespesa(int numeroProcesso, int codigoLancamento, Connection c) throws Exception{
+            LancaDespesa lancaDespesa = new LancaDespesa();
+            PreparedStatement struct = c.prepareStatement("select * from T_AM_ART_LANCA_DESPESA where NR_PROCESSO = ? and CD_LANCAMENTO = ?");
+            struct.setInt(1, numeroProcesso);
+            struct.setInt(2, codigoLancamento);
+            
+            ResultSet result = struct.executeQuery();
+            if(result.next()){
+                lancaDespesa.setCodigoLancamento(result.getInt("CD_LANCAMENTO"));
+                lancaDespesa.setCodigoTipoDespesa(result.getInt("CD_TIPO_DESPESA"));
+                lancaDespesa.setNumero(result.getInt("NR_PROCESSO"));
+                lancaDespesa.setDataDespesa(result.getString("DT_DESPESA"));
+                lancaDespesa.setValorDespesa(result.getDouble("VL_DESPESA"));
+            }
+            result.close();
+            struct.close();
+            return lancaDespesa;
+        }
+        
+        public int update(int codigoLancamento, String data, Double valor, String desc, Connection c) throws Exception{
             PreparedStatement struct = c.prepareStatement("update T_AM_ART_LANCA_DESPESA set DT_DESPESA = ?, VL_DESPESA = ?, DS_OBSERVACAO = ? where CD_LANCAMENTO = ?");
             struct.setString(1, data);
             struct.setDouble(2, valor);
             struct.setString(3, desc);
-            struct.setInt(4, codigoDespesa);
+            struct.setInt(4, codigoLancamento);
             int saida = struct.executeUpdate();
             struct.close();
             return saida;
